@@ -18,12 +18,12 @@ import torchvision.transforms as transforms
 if __name__ == "__main__":
 
     img_transform = transforms.Compose([
-        transforms.Resize((768,512)),
+        transforms.Resize((256,256)),
         transforms.ToTensor(),
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
     ])
     mask_transform = transforms.Compose([
-        transforms.Resize((768,512)),
+        transforms.Resize((256,256)),
         transforms.ToTensor()
     ])
 
@@ -39,11 +39,11 @@ if __name__ == "__main__":
 
     model.model.load_state_dict(TransRef['net'])
 
-    input_mask_paths = glob('{:s}/*'.format("/project/liutaorong/TransRef/style_test/mask/"))
+    input_mask_paths = glob('{:s}/*'.format("/project/liutaorong/TransRef/test/mask/"))
     input_mask_paths.sort()
-    de_paths = glob('{:s}/*'.format("/project/liutaorong/TransRef/style_test/input/"))
+    de_paths = glob('{:s}/*'.format("/project/liutaorong/TransRef/test/input/"))
     de_paths.sort()
-    ref_paths = glob('{:s}/*'.format("/project/liutaorong/TransRef/style_test/reference/"))
+    ref_paths = glob('{:s}/*'.format("/project/liutaorong/TransRef/test/reference/"))
     ref_paths.sort()
 
     image_len = len(de_paths)
