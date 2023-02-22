@@ -1,17 +1,7 @@
 
-from models.model import create_model
 import torch
 from thop import profile
-import time
-from options.train_options import TrainOptions
-from data.dataprocess import DataProcess
-from models.model import create_model
-import torchvision
-from torch.utils import data
-from torch.utils.tensorboard import SummaryWriter
-import os
 from models.TransRef import TransRef_Base
-from PIL import Image
 model = TransRef_Base().cuda()
 # Model
 print('==> Building model..')
