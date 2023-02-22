@@ -34,13 +34,11 @@ if __name__ == "__main__":
             model.set_input(detail,mask,reference)
             model.optimize_parameters()
             # display the training processing
-            #if total_steps % opt.display_freq == 0:
-                #input,reference,output, GT = model.get_current_visuals()
-                
-                
-                #image_out = torch.cat([reference,input,output,GT], 0)
-                #grid = torchvision.utils.make_grid(image_out)
-                #writer.add_image('Epoch_(%d)_(%d)' % (epoch, total_steps + 1), grid, total_steps + 1)
+            if total_steps % opt.display_freq == 0:
+                input,reference,output, GT = model.get_current_visuals()
+                image_out = torch.cat([reference,input,output,GT], 0)
+                grid = torchvision.utils.make_grid(image_out)
+                writer.add_image('Epoch_(%d)_(%d)' % (epoch, total_steps + 1), grid, total_steps + 1)
             # display the training loss
             if total_steps % opt.print_freq == 0:
                 errors = model.get_current_errors()
