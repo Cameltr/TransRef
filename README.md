@@ -9,14 +9,12 @@ Image inpainting for completing complicated semantic environments and diverse ho
 
 ### Environment
 Please install Anaconda, Pytorch. For other libs, please refer to the file requirements.txt.
-
 ```
 conda create -n TransRef python=3.8
 conda activate TransRef
 git clone https://github.com/Cameltr/TransRef.git
 pip install -r requirements.txt
 ```
-
 ### Datasets
 For reference-guided image inpainting, the similarity between the image and its reference image is of great significance to the inpainting results. However, to the best of our knowledge, there is no such publicly available dataset for this new task. In this work, expended from our previously proposed DPED10K dataset in [RGTSI](https://github.com/Cameltr/RGTSI), we construct a new dataset, namely **DPED50K**, based on the [DPED](http://people.ee.ethz.ch/~ihnatova/) dataset , which consists of real-world photos captured by three different mobile phones and one high-end reflex camera.
 
