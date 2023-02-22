@@ -26,11 +26,7 @@ class DataProcess(torch.utils.data.Dataset):
         self.Train = False
         if train:
             self.img_paths = os.listdir(img_root)
-            #self.img_paths = sorted(glob('{:s}/*'.format(img_root), recursive=True))
-            #self.st_paths = sorted(glob('{:s}/*'.format(st_root), recursive=True))
             self.mask_paths = os.listdir(input_mask_root)
-            #self.mask_paths = sorted(glob('{:s}/*'.format(input_mask_root), recursive=True))
-
             self.ref_paths = os.listdir(img_root)
             self.Train = True
 
@@ -39,13 +35,10 @@ class DataProcess(torch.utils.data.Dataset):
 
     def __getitem__(self, index):
         img_ = Image.open(self.img_root+'/'+self.img_paths[index])
-        #st_img = Image.open(self.st_paths[index])
         ref_img = Image.open(self.ref_root+'/'+self.ref_paths[index])
         mask_img = Image.open(self.input_mask_root+'/'+self.mask_paths[random.randint(0, self.N_mask - 1)])
 
         img = self.img_transform(img_.convert('RGB'))
-        #gray = self.mask_transform(img_.convert('L'))
-        #st_img = self.img_transform(st_img.convert('RGB'))
         ref_img = self.img_transform(ref_img.convert('RGB'))
         mask_img = self.mask_transform(mask_img.convert('RGB'))
 
