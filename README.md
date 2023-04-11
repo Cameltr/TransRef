@@ -31,7 +31,7 @@ For reference-guided image inpainting, the similarity between the image and its 
 
 ## Pre-trained weight and test model
 
-I will re-train our model and update the parameters soon
+I will release our model after the paper accepted.
 
 ## Training and Testing
 ```bash
@@ -47,3 +47,25 @@ To log training, use `--./logs` for Tensorboard. The logs are stored at `logs/[n
 python test.py  
 ```
 Please edit the the path of test images in `test.py` when testing on your dataset.
+
+## Citation
+If you find our code or datasets helpful for your research, please cite：
+```
+@misc{TransRef,
+    title = {TransRef: Multi-Scale Reference Embedding Transformer for Reference-Guided Image Inpainting},
+    author = {Liao, Liang and Liu, Taorong and Chen, Delin and Xiao, Jing and Wang, Zheng and Lin, Chia-Wen and Satoh, Shin’ichi},
+    version = {1.0},
+    publisher = {Github Repository},
+    url = {\url{https://github.com/Cameltr/TransRef}},
+    year = {2023}
+}
+
+@inproceedings{liu2022reference,
+    title={Reference-guided texture and structure inference for image inpainting},
+    author={Liu, Taorong and Liao, Liang and Wang, Zheng and Satoh, Shin’Ichi},
+    booktitle={2022 IEEE International Conference on Image Processing (ICIP)},
+    pages={1996--2000},
+    year={2022},
+    organization={IEEE}
+}
+```
