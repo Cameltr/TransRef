@@ -223,7 +223,6 @@ class EncoderTransformer(nn.Module):
         
         x1_ref = x1_ref.reshape(B, H_ref, W_ref, -1).permute(0, 3, 1, 2).contiguous()
 
-
         x1 = x1.view(x1.shape[0], x1.shape[1], -1).permute(0, 2, 1)
 
         for i, blk in enumerate(self.block2):
@@ -971,6 +970,7 @@ class TransRef(BaseModel):
 
     def name(self):
         return self.modelname
+    
     def mask_process(self, mask):
         mask = mask[0][0]
         mask = torch.unsqueeze(mask, 0)
@@ -978,7 +978,7 @@ class TransRef(BaseModel):
         mask = mask.byte()
         return mask
     
-    def set_input(self, input_De,  input_Mask, ref_De):
+    def set_input(self, input_De, input_Mask, ref_De):
         self.Gt_DE = input_De.to(self.device)
         
         self.input_DE = input_De.to(self.device)
