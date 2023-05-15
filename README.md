@@ -22,7 +22,7 @@ For reference-guided image inpainting, the similarity between the image and its 
 
 ![](./imgs/dataset.png)
 
-- Please download **DPED50K** dataset from [Baidu Netdisk](https://pan.baidu.com/s/17HmDXmStYRhAErpYjLFkJA)(password: pxl2),
+- Please download **DPED50K** dataset from [Baidu Netdisk](https://pan.baidu.com/s/17HmDXmStYRhAErpYjLFkJA)(password: pxl2), or [Google Cloud](https://drive.google.com/drive/folders/1rbKL-x2HMEjpMXBSjQ2sLgM3FUJqbzPH?usp=share_link)
 
 - TransRef is trained and tested on the irregular mask dataset provided by [Liu et al](https://arxiv.org/abs/1804.07723). You can download publically available Irregular Mask Dataset from their [website](http://masc.cs.gmu.edu/wiki/partialconv).
 
