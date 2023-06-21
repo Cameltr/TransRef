@@ -1,5 +1,6 @@
 # TransRef: Multi-Scale Reference Embedding Transformer for Reference-Guided Image Inpainting
-![visitors](https://visitor-badge.glitch.me/badge?page_id=Cameltr/TransRef)
+[![paper](https://img.shields.io/badge/arxiv-Paper-blue)](https://arxiv.org/abs/2306.11528)
+
 
 Code and datasets of paper *TransRef: Multi-Scale Reference Embedding Transformer for Reference-Guided Image Inpainting*.
 
@@ -51,16 +52,14 @@ Please edit the the path of test images in `test.py` when testing on your datase
 ## Citation
 If you find our code or datasets helpful for your research, please cite：
 ```
-@misc{TransRef,
-    title = {TransRef: Multi-Scale Reference Embedding Transformer for Reference-Guided Image Inpainting},
-    author = {Liao, Liang and Liu, Taorong and Chen, Delin and Xiao, Jing and Wang, Zheng and Lin, Chia-Wen and Satoh, Shin’ichi},
-    version = {1.0},
-    publisher = {Github Repository},
-    url = {\url{https://github.com/Cameltr/TransRef}},
-    year = {2023}
+@article{TransRef,
+    title={TransRef: Multi-Scale Reference Embedding Transformer for Reference-Guided Image Inpainting}, 
+    author={Liang Liao and Taorong Liu and Delin Chen and Jing Xiao and Zheng Wang and Chia-Wen Lin and Satoh, Shin’Ichi},
+    year={2023},
+    journal={arXiv preprint arXiv:2306.11528},
 }
 
-@inproceedings{liu2022reference,
+@inproceedings{RGTSI,
     title={Reference-guided texture and structure inference for image inpainting},
     author={Liu, Taorong and Liao, Liang and Wang, Zheng and Satoh, Shin’Ichi},
     booktitle={2022 IEEE International Conference on Image Processing (ICIP)},
