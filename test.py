@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     TransRef = torch.load("/project/liutaorong/TransRef/checkpoints/TransRef/400_Trans.pth")
 
-    model.model.load_state_dict(TransRef['net'])
+    model.model.load_state_dict(TransRef['net'], ,strict=False)
 
     input_mask_paths = glob('{:s}/*'.format("/project/liutaorong/TransRef/test/mask/"))
     input_mask_paths.sort()
