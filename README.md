@@ -22,19 +22,19 @@ For reference-guided image inpainting, the similarity between the image and its 
 
 ![](./imgs/dataset.png)
 
-- Please download **DPED50K** dataset from [Baidu Netdisk](https://pan.baidu.com/s/17HmDXmStYRhAErpYjLFkJA)(Password: pxl2), or [Google Cloud](https://drive.google.com/drive/folders/1rbKL-x2HMEjpMXBSjQ2sLgM3FUJqbzPH?usp=share_link)
+- Please download **DPED50K** dataset from [Baidu Netdisk](https://pan.baidu.com/s/17HmDXmStYRhAErpYjLFkJA)(Password: pxl2), or [Google Drive](https://drive.google.com/drive/folders/1rbKL-x2HMEjpMXBSjQ2sLgM3FUJqbzPH?usp=share_link)
 
-- TransRef is trained and tested on the irregular mask dataset provided by [Liu et al](https://arxiv.org/abs/1804.07723). You can download publically available Irregular Mask Dataset from their [website](http://masc.cs.gmu.edu/wiki/partialconv).
+- TransRef is trained and tested on the irregular mask dataset provided by [Liu et al](https://arxiv.org/abs/1804.07723). You can download the publically available Irregular Mask Dataset from their [website](http://masc.cs.gmu.edu/wiki/partialconv).
 
 - Create a folder and unzip the dataset into it, then 
  edit the path of the folder in `options/base_options.py`
 
 ## Pre-trained weight and test model
-You can download the model trained on DPED50K dataset from [Baidu Netdisk](https://pan.baidu.com/s/12z_QtLjWirR9hY3m7zygQw](Password：wy1f), or[Google Drive](https://drive.google.com/file/d/1gXLbs28Z72dPbXHG2wqocf6R0X6ZgPTS/view?usp=drive_link). Please note that this model was trained on the DPED50K dataset. When tested on other dataset, its performance might not be as good. It is recommended to retrain the model using your own dataset.
+You can download the model trained on DPED50K dataset from [Baidu Netdisk](https://pan.baidu.com/s/12z_QtLjWirR9hY3m7zygQw)(Password：wy1f), or [Google Drive](https://drive.google.com/file/d/1gXLbs28Z72dPbXHG2wqocf6R0X6ZgPTS/view?usp=drive_link). Please note that this model was trained on the DPED50K dataset. When tested on other datasets, its performance might not be as good. It is recommended to retrain the model using your dataset.
 
 ## Training and Testing
 ```bash
-# To train on the your dataset, for example.
+# To train on your dataset, for example.
 python train.py  --de_root=[the path of ground truth images] --mask_root=[the path of mask images] -ref_root=[the path of reference images]
 ```
 There are many options you can specify. Please use `python train.py --help` or see the options
@@ -42,10 +42,10 @@ There are many options you can specify. Please use `python train.py --help` or s
 To log training, use `--./logs` for Tensorboard. The logs are stored at `logs/[name]`.
 
 ```bash
-# To test on the your dataset, for example.
+# To test on your dataset, for example.
 python test.py  
 ```
-Please edit the the path of test images in `test.py` when testing on your dataset.
+Please edit the path of test images in `test.py` when testing on your dataset.
 
 ## Citation
 If you find our code or datasets helpful for your research, please cite：
