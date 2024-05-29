@@ -30,8 +30,7 @@ For reference-guided image inpainting, the similarity between the image and its 
  edit the path of the folder in `options/base_options.py`
 
 ## Pre-trained weight and test model
-
-I will release our model after the paper accepted.
+You can download the model trained on DPED50K dataset from [Google Drive](https://drive.google.com/file/d/1gXLbs28Z72dPbXHG2wqocf6R0X6ZgPTS/view?usp=drive_link). Please note that this model was trained on the DPED50K dataset. When tested on other dataset, its performance might not be as good. It is recommended to retrain the model using your own dataset.
 
 ## Training and Testing
 ```bash
