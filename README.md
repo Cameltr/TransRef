@@ -22,7 +22,7 @@ For reference-guided image inpainting, the similarity between the image and its 
 
 ![](./imgs/dataset.png)
 
-- Please download **DPED50K** dataset from [Baidu Netdisk](https://pan.baidu.com/s/17HmDXmStYRhAErpYjLFkJA)(password: pxl2), or [Google Cloud](https://drive.google.com/drive/folders/1rbKL-x2HMEjpMXBSjQ2sLgM3FUJqbzPH?usp=share_link)
+- Please download **DPED50K** dataset from [Baidu Netdisk](https://pan.baidu.com/s/17HmDXmStYRhAErpYjLFkJA)(Password: pxl2), or [Google Cloud](https://drive.google.com/drive/folders/1rbKL-x2HMEjpMXBSjQ2sLgM3FUJqbzPH?usp=share_link)
 
 - TransRef is trained and tested on the irregular mask dataset provided by [Liu et al](https://arxiv.org/abs/1804.07723). You can download publically available Irregular Mask Dataset from their [website](http://masc.cs.gmu.edu/wiki/partialconv).
 
@@ -30,7 +30,7 @@ For reference-guided image inpainting, the similarity between the image and its 
  edit the path of the folder in `options/base_options.py`
 
 ## Pre-trained weight and test model
-You can download the model trained on DPED50K dataset from [Google Drive](https://drive.google.com/file/d/1gXLbs28Z72dPbXHG2wqocf6R0X6ZgPTS/view?usp=drive_link). Please note that this model was trained on the DPED50K dataset. When tested on other dataset, its performance might not be as good. It is recommended to retrain the model using your own dataset.
+You can download the model trained on DPED50K dataset from [Baidu Netdisk](https://pan.baidu.com/s/12z_QtLjWirR9hY3m7zygQw](Password：wy1f), or[Google Drive](https://drive.google.com/file/d/1gXLbs28Z72dPbXHG2wqocf6R0X6ZgPTS/view?usp=drive_link). Please note that this model was trained on the DPED50K dataset. When tested on other dataset, its performance might not be as good. It is recommended to retrain the model using your own dataset.
 
 ## Training and Testing
 ```bash
