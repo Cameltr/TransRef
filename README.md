@@ -24,7 +24,7 @@ For reference-guided image inpainting, the similarity between the image and its 
 
 - Please download **DPED50K** dataset from [Baidu Netdisk](https://pan.baidu.com/s/17HmDXmStYRhAErpYjLFkJA)(Password: pxl2), or [Google Drive](https://drive.google.com/drive/folders/1rbKL-x2HMEjpMXBSjQ2sLgM3FUJqbzPH?usp=share_link)
 
-- TransRef is trained and tested on the irregular mask dataset provided by [Liu et al](https://arxiv.org/abs/1804.07723). You can download the publically available Irregular Mask Dataset from their [website](http://masc.cs.gmu.edu/wiki/partialconv).
+- TransRef is trained and tested on the irregular mask dataset provided by [Liu et al](https://arxiv.org/abs/1804.07723). You can download the publically available Irregular Mask Dataset from their [website](https://nv-adlr.github.io/publication/partialconv-inpainting).
 
 - Create a folder and unzip the dataset into it, then 
  edit the path of the folder in `options/base_options.py`
