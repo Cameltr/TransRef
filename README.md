@@ -30,7 +30,7 @@ For reference-guided image inpainting, the similarity between the image and its 
  edit the path of the folder in `options/base_options.py`
 
 ## Pre-trained weight and test model
-You can download the model trained on DPED50K dataset from [Baidu Netdisk](https://pan.baidu.com/s/12z_QtLjWirR9hY3m7zygQw)(Password：wy1f), or [Google Drive](https://drive.google.com/file/d/1gXLbs28Z72dPbXHG2wqocf6R0X6ZgPTS/view?usp=drive_link). Please note that this model was trained on the DPED50K dataset. When tested on other datasets, its performance might not be as good. It is recommended to retrain the model using your dataset.
+You can download the model trained on DPED50K dataset from [Baidu Netdisk](https://pan.baidu.com/s/12z_QtLjWirR9hY3m7zygQw)(Password：wy1f), or [Google Drive](https://drive.google.com/file/d/1toUX6Dq3JOam6ErtJsaPHOHggLZjb8Rs/view?usp=drive_link). Please note that this model was trained on the DPED50K dataset. When tested on other datasets, its performance might not be as good. It is recommended to retrain the model using your dataset.
 
 ## Training and Testing
 ```bash
