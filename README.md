@@ -53,9 +53,11 @@ If you find our code or datasets helpful for your research, please cite：
 ```
 @article{TransRef,
     title={TransRef: Multi-Scale Reference Embedding Transformer for Reference-Guided Image Inpainting}, 
-    author={Liang Liao and Taorong Liu and Delin Chen and Jing Xiao and Zheng Wang and Chia-Wen Lin and Satoh, Shin’Ichi},
+    author={Taorong Liu and Liang Liao and Delin Chen and Jing Xiao and Zheng Wang and Chia-Wen Lin and Shin’ichi Satoh},
     year={2023},
-    journal={arXiv preprint arXiv:2306.11528},
+    journal = {Neurocomputing},
+    pages = {129749},
+    year = {2025},
 }
 
 @inproceedings{RGTSI,
