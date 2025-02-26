@@ -1,5 +1,6 @@
-# TransRef: Multi-Scale Reference Embedding Transformer for Reference-Guided Image Inpainting
-[![paper](https://img.shields.io/badge/arxiv-Paper-blue)](https://arxiv.org/abs/2306.11528)
+# [Neurocomputing 2025] TransRef: Multi-Scale Reference Embedding Transformer for Reference-Guided Image Inpainting
+[![paper](https://img.shields.io/badge/arxiv-Paper-blue)](https://arxiv.org/abs/2306.11528) 
+[![paper](https://img.shields.io/badge/Neurocomputing_2025-red)](https://www.sciencedirect.com/science/article/pii/S0925231225004217?via%3Dihub)
 
 Code and datasets of paper *TransRef: Multi-Scale Reference Embedding Transformer for Reference-Guided Image Inpainting*.
 
